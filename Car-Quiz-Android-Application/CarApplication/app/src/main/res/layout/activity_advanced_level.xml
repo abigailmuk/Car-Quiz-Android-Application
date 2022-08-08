@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".AdvancedLevel">
+
+    <TextView
+        android:id="@+id/tvAdvancedLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/welcome_to_advanced_level"
+        android:textSize="24sp"/>
+
+    <ImageView
+        android:id="@+id/guessImageView1"
+        android:layout_width="309dp"
+        android:layout_height="162dp"
+        android:gravity="center"
+        android:contentDescription="@string/car_image_1"
+        app:srcCompat="@drawable/citroen_ds4s"/>
+
+    <EditText
+        android:id="@+id/edtGuess_car_name1"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#33000000"
+        android:backgroundTint="@color/black"/>
+
+    <ImageView
+        android:id="@+id/guessImageView2"
+        android:layout_width="309dp"
+        android:layout_height="162dp"
+        android:contentDescription="@string/car_image_2"
+        app:srcCompat="@drawable/bmw3series" />
+
+    <EditText
+        android:id="@+id/edtGuess_car_name2"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:background="#33000000"
+        android:backgroundTint="@color/black" />
+
+    <ImageView
+        android:id="@+id/guessImageView3"
+        android:layout_width="309dp"
+        android:layout_height="162dp"
+        android:contentDescription="@string/car_image_3"
+        app:srcCompat="@drawable/minicooper" />
+
+    <EditText
+        android:id="@+id/edtGuess_car_name3"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:background="#33000000"
+        android:backgroundTint="@color/black"/>
+
+    <Button
+        android:id="@+id/btnSubmitGuessCarName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"/>
+
+</LinearLayout>

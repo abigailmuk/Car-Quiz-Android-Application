@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".IdentifyCarImage">
+
+    <TextView
+        android:id="@+id/tvIdentifyCarImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_identify_the_car_image"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/carImageNameDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/carImageView1"
+        android:layout_width="309dp"
+        android:layout_height="162dp"
+        android:contentDescription="@string/car_image_1" />
+
+    <ImageView
+        android:id="@+id/carImageView2"
+        android:layout_width="309dp"
+        android:layout_height="162dp"
+        android:contentDescription="@string/car_image_2"/>
+
+    <ImageView
+        android:id="@+id/carImageView3"
+        android:layout_width="309dp"
+        android:layout_height="162dp"
+        android:contentDescription="@string/car_image_3" />
+
+    <TextView
+        android:id="@+id/carImageResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnNextQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showNext"
+        android:text="@string/next" />
+
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".IdentifyCarMake">
+
+    <TextView
+        android:id="@+id/IdentifyCarMake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_identify_the_car_make"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/CarMakeImage"
+        android:layout_width="533dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/IdentifyCarMake"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:contentDescription="@string/car_image"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/DisplayCarMakeName"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_above="@+id/CarMakeSpinner"
+        android:layout_below="@+id/CarMakeImage"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="59dp"
+        android:text="@string/car_name_display"
+        android:textAlignment="center" />
+
+    <Spinner
+        android:id="@+id/CarMakeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:layout_above="@+id/IdentifyVerdict"
+        android:layout_marginBottom="0dp"
+        android:entries="@array/CarImages"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/IdentifyVerdict"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_above="@+id/btnSubmitCarMake"
+        android:layout_marginBottom="69dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/identifyVerdict"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_above="@+id/btnSubmitCarMake"
+        android:layout_marginBottom="-6dp"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnRestartCarMake"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="34dp"
+        android:onClick="showNext"
+        android:text="Next" />
+
+    <Button
+        android:id="@+id/btnSubmitCarMake"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="27dp"
+        android:text="@string/identify" />
+
+</RelativeLayout>

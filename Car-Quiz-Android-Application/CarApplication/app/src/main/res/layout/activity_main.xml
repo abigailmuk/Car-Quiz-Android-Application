@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnIdentifyCarMake"
+        android:layout_width="205dp"
+        android:layout_height="81dp"
+        android:text="@string/identify_the_car_make" />
+
+    <Button
+        android:id="@+id/btnHints"
+        android:layout_width="205dp"
+        android:layout_height="81dp"
+        android:text="@string/hints"/>
+
+    <Button
+        android:id="@+id/btnIdentifyCarImage"
+        android:layout_width="205dp"
+        android:layout_height="81dp"
+        android:text="@string/identify_the_car_image" />
+
+    <Button
+        android:id="@+id/btnAdvancedLevel"
+        android:layout_width="205dp"
+        android:layout_height="81dp"
+        android:text="@string/advanced_level" />
+
+</LinearLayout>
